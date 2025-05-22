@@ -1,0 +1,13 @@
+diff --git a/dist/connect.js b/dist/connect.js
+index ced998e0400024ef5c9d1263d7c100577db5639b..7be50f16a6cdb17dca054ba77b0d3b49e2f124dc 100644
+--- a/dist/connect.js
++++ b/dist/connect.js
+@@ -1,6 +1,6 @@
+-import { createClient } from '@libsql/client';
++import { createClient } from '@libsql/client/web';
+ import { pushDevSchema } from '@payloadcms/drizzle';
+-import { drizzle } from 'drizzle-orm/libsql';
++import { drizzle } from 'drizzle-orm/libsql/web';
+ export const connect = async function connect(options = {
+     hotReload: false
+ }) {
