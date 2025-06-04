@@ -23,4 +23,7 @@
     //   "bucket_name": "<BUCKET_NAME>",
     // },
   ],
+  "observability": {
+    "enabled": true,
+  },
 }
