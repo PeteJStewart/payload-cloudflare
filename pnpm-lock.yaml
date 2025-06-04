@@ -4,6 +4,11 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+patchedDependencies:
+  '@payloadcms/db-sqlite@3.40.0':
+    hash: ab9d38bad48ecccf93798b7e3af23a636efe2bb16b4c6334aca9f738d3878325
+    path: patches/@payloadcms__db-sqlite@3.40.0.patch
+
 importers:
 
   .:
@@ -13,7 +18,7 @@ importers:
         version: 1.1.0(wrangler@4.19.1)
       '@payloadcms/db-sqlite':
         specifier: 3.40.0
-        version: 3.40.0(@types/react@19.1.0)(payload@3.40.0(graphql@16.11.0)(typescript@5.7.3))(react@19.1.0)
+        version: 3.40.0(patch_hash=ab9d38bad48ecccf93798b7e3af23a636efe2bb16b4c6334aca9f738d3878325)(@types/react@19.1.0)(payload@3.40.0(graphql@16.11.0)(typescript@5.7.3))(react@19.1.0)
       '@payloadcms/next':
         specifier: 3.40.0
         version: 3.40.0(@types/react@19.1.0)(graphql@16.11.0)(monaco-editor@0.52.2)(next@15.3.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sass@1.77.4))(payload@3.40.0(graphql@16.11.0)(typescript@5.7.3))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(typescript@5.7.3)
@@ -7406,7 +7411,7 @@ snapshots:
       - aws-crt
       - supports-color
 
-  '@payloadcms/db-sqlite@3.40.0(@types/react@19.1.0)(payload@3.40.0(graphql@16.11.0)(typescript@5.7.3))(react@19.1.0)':
+  '@payloadcms/db-sqlite@3.40.0(patch_hash=ab9d38bad48ecccf93798b7e3af23a636efe2bb16b4c6334aca9f738d3878325)(@types/react@19.1.0)(payload@3.40.0(graphql@16.11.0)(typescript@5.7.3))(react@19.1.0)':
     dependencies:
       '@libsql/client': 0.14.0
       '@payloadcms/drizzle': 3.40.0(@libsql/client@0.14.0)(@types/react@19.1.0)(payload@3.40.0(graphql@16.11.0)(typescript@5.7.3))(react@19.1.0)
