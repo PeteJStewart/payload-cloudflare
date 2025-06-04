@@ -1,2 +1,0 @@
-patchedDependencies:
-  '@payloadcms/db-sqlite@3.40.0': patches/@payloadcms__db-sqlite@3.40.0.patch
