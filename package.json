@@ -46,7 +46,11 @@
     "wrangler": "^4.19.1"
   },
   "engines": {
-    "node": "^18.20.2 || >=20.9.0",
-    "pnpm": "^8 || ^9 || ^10"
+    "node": "^18.20.2 || >=20.9.0"
+  },
+  "pnpm": {
+    "patchedDependencies": {
+      "@payloadcms/db-sqlite@3.40.0": "patches/@payloadcms__db-sqlite@3.40.0.patch"
+    }
   }
 }
